@@ -6,5 +6,8 @@ export default function Menu() {
     <nav className={styles.menu}>
       <Logo/>
     </nav>
+    <header className={styles.header}>
+      <div className={styles.header__text}>A sua loja virtual de cervejas artesanais importadas e nacionais.</div>
+    </header>
    </main>)
 }
