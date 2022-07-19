@@ -1,8 +1,9 @@
-import styles from './Menu.module.scss'
 import { ReactComponent as Logo } from 'assets/logo.svg'
-import Searcher from './Searcher/'
 import { useState } from 'react'
+
 import Filters from './Filters'
+import styles from './Menu.module.scss'
+import Searcher from './Searcher/'
 import Sorter from './Sorter'
 
 export default function Menu() {

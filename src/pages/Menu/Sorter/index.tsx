@@ -1,8 +1,9 @@
-import styles from './Sorter.module.scss'
-import options from './options.json'
-import React, { useState } from 'react'
 import classNames from 'classnames'
-import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md'
+import React, { useState } from 'react'
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md'
+
+import options from './options.json'
+import styles from './Sorter.module.scss'
 
 interface Props {
   sorter: string
