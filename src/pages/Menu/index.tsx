@@ -1,27 +1,32 @@
-import styles from "./Menu.module.scss"
-import {ReactComponent as Logo} from "assets/logo.svg"
-import Searcher from './Searcher/';
-import { useState } from "react";
-import Filters from "./Filters";
-import Sorter from "./Sorter";
+import styles from './Menu.module.scss'
+import { ReactComponent as Logo } from 'assets/logo.svg'
+import Searcher from './Searcher/'
+import { useState } from 'react'
+import Filters from './Filters'
+import Sorter from './Sorter'
 
 export default function Menu() {
-  const [search, setSearch] = useState("")
+  const [search, setSearch] = useState('')
   const [filter, setFilter] = useState<number | null>(null)
-   return (<main>
-    <nav className={styles.menu}>
-      <Logo/>
-    </nav>
-    <header className={styles.header}>
-      <div className={styles.header__text}>A sua loja virtual de cervejas artesanais importadas e nacionais.</div>
-    </header>
-    <section className={styles.search}>
-      <h3 className={styles.search__title}>O que você procura?</h3>
-      <Searcher search={search} setSearch={setSearch}/>
-      <div className={styles.search__filters}>
-        <Filters filter={filter} setFilter={setFilter}/>
-        <Sorter />
-      </div>
-    </section>
-   </main>)
+  const [sorter, setSorter] = useState('')
+  return (
+    <main>
+      <nav className={styles.menu}>
+        <Logo />
+      </nav>
+      <header className={styles.header}>
+        <div className={styles.header__text}>
+          A sua loja virtual de cervejas artesanais importadas e nacionais.
+        </div>
+      </header>
+      <section className={styles.search}>
+        <h3 className={styles.search__title}>O que você procura?</h3>
+        <Searcher search={search} setSearch={setSearch} />
+        <div className={styles.search__filters}>
+          <Filters filter={filter} setFilter={setFilter} />
+          <Sorter sorter={sorter} setSorter={setSorter} />
+        </div>
+      </section>
+    </main>
+  )
 }
