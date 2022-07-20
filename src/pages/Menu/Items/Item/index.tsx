@@ -1,11 +1,21 @@
+import classNames from 'classnames'
+
 import menu from '../items.json'
 import styles from './Item.module.scss'
-import classNames from 'classnames'
 
 type Props = typeof menu[0]
 
 export default function Item(props: Props) {
-  const { title, description, category, volume, ibu, price, photo } = props
+  const {
+    title,
+    description,
+    category,
+    volume,
+    ibu,
+    price,
+    photo,
+    review,
+  } = props
   return (
     <div className={styles.item}>
       <div className={styles.items__image}>
@@ -25,7 +35,8 @@ export default function Item(props: Props) {
           >
             {category.label}
           </div>
-          <div className={styles.item__volume}>{volume}</div>
+          <div className={styles.item__review}>⭐{review}</div>
+          <div className={styles.item__volume}>{volume}ml</div>
           <div className={styles.item__ibu}>{ibu}</div>
           <div className={styles.item__value}>R${price}</div>
         </div>
