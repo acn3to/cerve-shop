@@ -16,7 +16,7 @@
   position: relative;
 
   &--active {
-    background-color: $blue;
+    background-color: $yellow;
     color: white;
   }
 
@@ -47,7 +47,7 @@
     &:hover,
 
     &--active {
-      background-color: $blue;
+      background-color: $yellow;
       cursor: pointer;
       color: white;
     }
