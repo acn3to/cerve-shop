@@ -39,13 +39,13 @@ $cups: #ea3546;
 
   &__title {
     h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: bold;
       margin-bottom: 20px;
     }
     p {
       color: $dark-grey;
-      font-size: 1.3rem;
+      font-size: 1rem;
       font-weight: 600;
       max-width: 600px;
       margin-bottom: 20px;
@@ -102,7 +102,7 @@ $cups: #ea3546;
   &__value {
     align-items: center;
     display: flex;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
     justify-content: center;
   }
@@ -110,5 +110,6 @@ $cups: #ea3546;
   &__value {
     color: $orange;
     font-size: 1.7rem;
+    align-self: baseline ;
   }
 }
