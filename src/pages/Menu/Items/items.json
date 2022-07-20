@@ -1,0 +1,124 @@
+[
+  {
+    "title": "Cerveja Goose Island Midway 355ml",
+    "description": "Com 4,1% de teor alcoólico, 30 IBU e aroma de frutas tropicais, a Midway IPA é uma Session IPA leve e refrescante . Ela tem sua história toda ligada à Chicago. Seu nome é originário da Feira Mundial da cidade, de 1893. Em seu centro, estava a Midway Plaisance, uma área que exibia a primeira roda gigante do mundo, reunindo visitantes de todas as nacionalidades. Nesse espírito, a cerveja é uma session pronta para reunir amantes de cerveja de todos os cantos do planeta.",
+    "photo": "/assets/beers/goose_island.png",
+    "volume": "355ml",
+    "ibu": "30 IBU",
+    "price": 7.19,
+    "id": 1,
+    "category": {
+      "id": 1,
+      "label": "Importadas",
+      "tag": "importeds"
+    }
+  },
+  {
+    "title": "Cerveja Tcheca Pilsner Urquell 500ml",
+    "description": "Primeira Pilsner dourada - criada em 1842 e ainda é produzida na mesma cervejaria, com a mesma água de Plzen, o mesmo lúpulo Saaz da cidade de Zatec, a mesma cevada checa da Morávia e a mesma levedura usada na receita original.",
+    "photo": "/assets/beers/urquell.png",
+    "volume": "500ml",
+    "ibu": "37 IBU",
+    "price": 29.99,
+    "id": 2,
+    "category": {
+      "id": 1,
+      "label": "Importadas",
+      "tag": "importeds"
+    }
+  },
+  {
+    "title": "Cerveja Colorado Appia 600ml",
+    "description": "Cerveja Colorado Appia 600ml. A palavra Appia vem do latim e significa abelha. O nome perfeito para a primeira cerveja do Brasil a utilizar mel em sua fórmula. Uma combinação exótica que, além do mel das laranjeiras, é feita a partir da melhor cevada, trigos maltados e nossa exclusiva levedura de alta fermentação. Doce, encorpada e refrescante, é perfeita para quem busca novos e diferentes sabores. O seu estilo Honey Wheat Ale, combina com queijo brie, pernil e massas leves. Colorado Appia ganhou por três anos consecutivos a Medalha de bronze no festival Brasileiro de Cerveja. (2013, 2014 e 2015). Campeã Nacional com Medalha de Ouro no Estilo Flavoured Honey & Maple na WBA 2017.",
+    "photo": "/assets/beers/colorado_appia.png",
+    "volume": "600ml",
+    "ibu": "10 IBU",
+    "price": 12.99,
+    "id": 3,
+    "category": {
+      "id": 1,
+      "label": "Nacionais",
+      "tag": "nationals"
+    }
+  },
+  {
+    "title": "Cerveja Roleta Russa IPA Lata 350ml",
+    "description": "A Cerveja Roleta Russa IPA - Lata 350ml tem o toque de ousadia que a Roleta Russa carrega em seu DNA. Nesta versão, a adição dos lúpulos americanos é exagerada, proporcionando à cerveja amargor, sabor e aroma. Quando abrimos a garrafa, sentimos aquele tiro de aroma cítrico e frutado. Ao servir no copo o entusiasmo aumenta, ao colocar na boca, a sensação é demais! Viva a Revolução Cervejeira! Obs: Após tomar uma garrafa de IPA, você começa a enxergar as formigas em fila indiana, carregando lúpulo e mais lúpulo para dentro da sua cerveja, são adições contínuas.",
+    "photo": "/assets/beers/roleta_russa_ipa.png",
+    "volume": "350ml",
+    "ibu": "58 IBU",
+    "price": 12.99,
+    "id": 4,
+    "category": {
+      "id": 2,
+      "label": "Nacionais",
+      "tag": "nationals"
+    }
+  },
+  {
+    "title": "Cerveja Colorado Demoiselle 600ml",
+    "description": "Cerveja Colorado Demoiselle (600ml): Demoiselle é o nome de um dos aviões inventados por Santos Dummont, que passou parte da infância na região da Alta Mogiana, onde seu pai foi um dos grandes expoentes no cultivo do café. E é esse ingrediente tipicamente brasileiro, combinado com maltes importados, que dá o toque singular no sabor e no aroma desta preciosa cerveja. Demoiselle é uma cerveja premiada com medalha de ouro na European Beer Star (2008) na Alemanha. Campeã Nacional com Medalha de Ouro no Estilo Flavoured Chocolate & Coffe Stout na WBA 2017.",
+    "photo": "/assets/beers/colorado_demoiselle.png",
+    "volume": "600ml",
+    "ibu": "22 IBU",
+    "price": 12.99,
+    "id": 5,
+    "category": {
+      "id": 2,
+      "label": "Nacionais",
+      "tag": "nationals"
+    }
+  },
+  {
+    "title": "Combo Presente Colorado Ribeirão Lager, Appia e Demoiselle + 1 Copo Oficial",
+    "description": "Este combo contém: 1 Cerveja Colorado Ribeirão Lager 600ml + 1 Cerveja Colorado Appia 600ml + 1 Cerveja Colorado Demoiselle 600ml + 1 Copo Colorado 350ml + 1 Maleta Colorado",
+    "photo": "/assets/combos/combo_colorado.png",
+    "volume": "600ml",
+    "price": 61.99,
+    "id": 6,
+    "category": {
+      "id": 3,
+      "label": "Combos",
+      "tag": "combos"
+    }
+  },
+  {
+    "title": "Combo Hocus Pocus 4 Cervejas + Copo ISO",
+    "description": "Este combo contém: 1 Hocus Pocus Magic Trap 500ml + 1 Hocus Pocus Orange Sunshine 500ml + 1 Hocus Pocus Interstellar 500ml + 1 Hocus Pocus Pandora 500ml + 1 Copo Hocus Pocus Taça ISO 200ml",
+    "photo": "/assets/combos/combo_hocus_pocus.png",
+    "volume": "500ml",
+    "price": 129.99,
+    "id": 7,
+    "category": {
+      "id": 4,
+      "label": "Combos",
+      "tag": "combos"
+    }
+  },
+  {
+    "title": "Cálice Stella Artois 250ml",
+    "description": "Rico em detalhes para uma degustação perfeita e produzido com vidro especial no formato Lager, ideal também para servir cervejas do tipo Pilsen. Sua haste evita a transferência do calor das mãos para a bebida, mantendo a temperatura ideal. Material: Vidro Capacidade: 250ml Altura: 19,00cm Largura: 8,00cm Comprimento: 8,00cm",
+    "photo": "/assets/cups/copo_stella.png",
+    "volume": "250ml",
+    "price": 23.99,
+    "id": 8,
+    "category": {
+      "id": 4,
+      "label": "Copos",
+      "tag": "cups"
+    }
+  },
+  {
+    "title": "Copo Roleta Russa 320ml (Pulseira Preta)",
+    "description": "Roleta Russa explora os estilos mais queridinhos dos hopsmaniacs: as IPAs, em muitas das suas variações, dos maltes torrados aos caramelos e malte base, de teor alcoólico mais elevado à sem álcool, mas com apenas uma certeza: cargas extremas de lúpulo. São experiências sensoriais incríveis, indicadas para aqueles que ousam se arriscar e encarar tanto amargor, e para ter a completa experiência, experimente esse copo de vidro com o fundo estampado e um bracelete que dar pra usar no braço ou deixar no copo, sem perder o estilo.",
+    "photo": "/assets/cups/copo_roleta.png",
+    "volume": "320ml",
+    "price": 33.99,
+    "id": 9,
+    "category": {
+      "id": 3,
+      "label": "Copos",
+      "tag": "cups"
+    }
+  }
+]

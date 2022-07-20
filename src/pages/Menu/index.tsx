@@ -5,6 +5,7 @@ import Filters from './Filters'
 import styles from './Menu.module.scss'
 import Searcher from './Searcher/'
 import Sorter from './Sorter'
+import Items from './Items'
 
 export default function Menu() {
   const [search, setSearch] = useState('')
@@ -27,6 +28,7 @@ export default function Menu() {
           <Filters filter={filter} setFilter={setFilter} />
           <Sorter sorter={sorter} setSorter={setSorter} />
         </div>
+        <Items />
       </section>
     </main>
   )
