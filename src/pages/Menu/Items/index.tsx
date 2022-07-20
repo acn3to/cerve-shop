@@ -26,14 +26,14 @@ export default function Items(props: Props) {
 
   function sort(newList: typeof menu) {
     switch (sorter) {
-      case 'a_z':
-        return newList.sort((a, b) => (a.title > b.title ? 1 : -1))
-      case 'reviews':
-        return newList.sort((a, b) => (a.review > b.review ? 1 : -1))
-      case 'price':
-        return newList.sort((a, b) => (a.price > b.price ? 1 : -1))
-      default:
-        return newList
+    case 'a_z':
+      return newList.sort((a, b) => (a.title > b.title ? 1 : -1))
+    case 'reviews':
+      return newList.sort((a, b) => (a.review > b.review ? 1 : -1))
+    case 'price':
+      return newList.sort((a, b) => (a.price > b.price ? 1 : -1))
+    default:
+      return newList
     }
   }
 
