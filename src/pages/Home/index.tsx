@@ -1,3 +1,4 @@
+import Menu from 'components/Menu'
 import menu from 'data/menu.json'
 import styles from './Home.module.scss'
 
@@ -9,6 +10,7 @@ export default function Home() {
 
   return (
     <section>
+      <Menu />
       <h3 className={styles.title}>Recomendações do mestre cervejeiro</h3>
       <div className={styles.recommendeds}>
         {recommendedItems.map((item) => (
