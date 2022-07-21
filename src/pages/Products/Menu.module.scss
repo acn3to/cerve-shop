@@ -1,19 +1,6 @@
 @import 'styles/variables';
 @import "styles/breakpoints";
 
-.menu {
-  padding: 20px $horizontal-padding;
-  @media (max-width: $desktop_xsm) {
-    padding: 20px $horizontal-padding-mobile;
-  }
-  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-    padding: 20px $horizontal-padding-sm;
-  }
-  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-    padding: 20px $horizontal-padding-md;
-  }
-}
-
 .header {
   align-items: center;
   background-image: url("/assets/menu/header.png");

@@ -1,21 +1,19 @@
-import { ReactComponent as Logo } from 'assets/logo.svg'
+import Menu from 'components/Menu'
 import { useState } from 'react'
 
 import Filters from './Filters'
 import Items from './Items'
 import styles from './Menu.module.scss'
-import Searcher from './Searcher/'
+import Searcher from './Searcher'
 import Sorter from './Sorter'
 
-export default function Menu() {
+export default function Products() {
   const [search, setSearch] = useState('')
   const [filter, setFilter] = useState<number | null>(null)
   const [sorter, setSorter] = useState('')
   return (
     <main>
-      <nav className={styles.menu}>
-        <Logo />
-      </nav>
+      <Menu />
       <header className={styles.header}>
         <div className={styles.header__text}>
           A sua loja virtual de cervejas artesanais importadas e nacionais.

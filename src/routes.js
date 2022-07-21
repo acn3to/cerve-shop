@@ -1,5 +1,5 @@
 import Home from 'pages/Home'
-import Menu from 'pages/Menu'
+import Products from 'pages/Products'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 export default function AppRouter() {
@@ -7,7 +7,7 @@ export default function AppRouter() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
+        <Route path="/produtos" element={<Products />} />
       </Routes>
     </Router>
   )
