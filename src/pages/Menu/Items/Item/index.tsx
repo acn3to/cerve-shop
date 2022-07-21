@@ -1,6 +1,6 @@
 import classNames from 'classnames'
 
-import menu from '../items.json'
+import menu from 'data/menu.json'
 import styles from './Item.module.scss'
 
 type Props = typeof menu[0]
