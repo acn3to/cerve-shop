@@ -11,21 +11,14 @@ export default function Products() {
   const [filter, setFilter] = useState<number | null>(null)
   const [sorter, setSorter] = useState('')
   return (
-    <main>
-      <header className={styles.header}>
-        <div className={styles.header__text}>
-          A sua loja virtual de cervejas artesanais importadas e nacionais.
-        </div>
-      </header>
-      <section className={styles.search}>
-        <h3 className={styles.search__title}>Produtos</h3>
-        <Searcher search={search} setSearch={setSearch} />
-        <div className={styles.search__filters}>
-          <Filters filter={filter} setFilter={setFilter} />
-          <Sorter sorter={sorter} setSorter={setSorter} />
-        </div>
-        <Items search={search} filter={filter} sorter={sorter} />
-      </section>
-    </main>
+    <section className={styles.search}>
+      <h3 className={styles.search__title}>Produtos</h3>
+      <Searcher search={search} setSearch={setSearch} />
+      <div className={styles.search__filters}>
+        <Filters filter={filter} setFilter={setFilter} />
+        <Sorter sorter={sorter} setSorter={setSorter} />
+      </div>
+      <Items search={search} filter={filter} sorter={sorter} />
+    </section>
   )
 }

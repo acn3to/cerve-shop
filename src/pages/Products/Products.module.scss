@@ -1,33 +1,6 @@
 @import 'styles/variables';
 @import "styles/breakpoints";
 
-.header {
-  align-items: center;
-  background-image: url("/assets/menu/header.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  height: 300px;
-  padding: 0px $horizontal-padding;
-  @media (max-width: $desktop_xsm) {
-    padding: 0px $horizontal-padding-mobile;
-  }
-  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-    padding: 0px $horizontal-padding-sm;
-  }
-  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-    padding: 0px $horizontal-padding-md;
-  }
-  
-  &__text {
-    color: black;
-    font-size: 2.5rem;
-    font-weight: bold;
-    min-width: 400px;
-    width: 40%;
-  }
-}
-
 .search {
   padding: 50px $horizontal-padding;
   @media (max-width: $desktop_xsm) {
