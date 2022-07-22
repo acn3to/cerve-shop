@@ -1,23 +1,7 @@
 @import 'styles/variables';
 @import "styles/breakpoints";
 
-.search {
-  padding: 50px $horizontal-padding;
-  @media (max-width: $desktop_xsm) {
-    padding: 50px $horizontal-padding-mobile;
-  }
-  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-    padding: 50px $horizontal-padding-sm;
-  }
-  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-    padding: 50px $horizontal-padding-md;
-  }
-  &__title {
-    color: $dark;
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-
+.products {
   &__filters {
     align-items: center;
     display: flex;
