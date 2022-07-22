@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import stylesTheme from 'styles/Theme.module.scss'
 
 import Filters from './Filters'
 import Items from './Items'
@@ -11,10 +12,10 @@ export default function Products() {
   const [filter, setFilter] = useState<number | null>(null)
   const [sorter, setSorter] = useState('')
   return (
-    <section className={styles.search}>
-      <h3 className={styles.search__title}>Produtos</h3>
+    <section className={styles.products}>
+      <h3 className={stylesTheme.title}>Produtos</h3>
       <Searcher search={search} setSearch={setSearch} />
-      <div className={styles.search__filters}>
+      <div className={styles.products__filters}>
         <Filters filter={filter} setFilter={setFilter} />
         <Sorter sorter={sorter} setSorter={setSorter} />
       </div>
