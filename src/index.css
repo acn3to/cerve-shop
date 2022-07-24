@@ -9,3 +9,9 @@ body {
   box-sizing: border-box;
   font-family: 'Alegreya Sans', sans-serif;
 }
+
+#root > main.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
