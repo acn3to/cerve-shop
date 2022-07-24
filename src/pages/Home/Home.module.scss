@@ -1,11 +1,5 @@
 @import 'styles/variables';
 
-.title {
-  color: $dark;
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
 .recommendeds {
   border-radius: 2px;
   display: flex;
@@ -33,7 +27,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     padding: 10px 0;
-    transition: .2s ease;
+    transition: 0.2s ease;
     width: 100%;
 
     &:hover {
@@ -46,6 +40,7 @@
   margin-bottom: 100px;
   position: relative;
   width: 100%;
+
   img {
     border-radius: 5px;
     width: 100%;
@@ -53,7 +48,7 @@
 
   &__address {
     align-items: center;
-    background-color: $dark;
+    background-color: rgba(17, 25, 40, 0.68);
     border-radius: 5px;
     bottom: -45px;
     color: white;
@@ -67,5 +62,9 @@
     left: 0;
     right: 0;
     width: 200px;
+    backdrop-filter: blur(5px) saturate(139%);
+    -webkit-backdrop-filter: blur(5px) saturate(139%);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
   }
 }
