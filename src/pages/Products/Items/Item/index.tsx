@@ -1,21 +1,10 @@
-import classNames from 'classnames'
+import Tags from 'components/Tags'
+import { Product } from 'types/Product'
 
-import menu from 'data/menu.json'
 import styles from './Item.module.scss'
 
-type Props = typeof menu[0]
-
-export default function Item(props: Props) {
-  const {
-    title,
-    description,
-    category,
-    volume,
-    ibu,
-    price,
-    photo,
-    review,
-  } = props
+export default function Item(props: Product) {
+  const { title, description, photo } = props
   return (
     <div className={styles.item}>
       <div className={styles.items__image}>
@@ -26,20 +15,7 @@ export default function Item(props: Props) {
           <h2>{title}</h2>
           <p>{description}</p>
         </div>
-        <div className={styles.item__tags}>
-          <div
-            className={classNames({
-              [styles.item__type]: true,
-              [styles[`item__type__${category.tag}`]]: true,
-            })}
-          >
-            {category.label}
-          </div>
-          <div className={styles.item__review}>⭐{review}</div>
-          <div className={styles.item__volume}>{volume}ml</div>
-          <div className={styles.item__ibu}>{ibu}</div>
-        </div>
-        <div className={styles.item__value}>R${price}</div>
+        <Tags {...props} />
       </div>
     </div>
   )

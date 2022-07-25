@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import Item from './Item'
 import menu from 'data/menu.json'
 import styles from './Items.module.scss'
+import { Menu } from 'types/Product'
 
 interface Props {
   search: string
@@ -24,7 +25,7 @@ export default function Items(props: Props) {
     return true
   }
 
-  function sort(newList: typeof menu) {
+  function sort(newList: Menu) {
     switch (sorter) {
     case 'a_z':
       return newList.sort((a, b) => (a.title > b.title ? 1 : -1))
