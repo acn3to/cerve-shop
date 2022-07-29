@@ -1,15 +1,22 @@
+import ourHome from 'assets/our_home.png'
 import menu from 'data/menu.json'
+import { useNavigate } from 'react-router-dom'
 import stylesTheme from 'styles/Theme.module.scss'
+import { Product } from 'types/Product'
 
 import styles from './Home.module.scss'
-
-import ourHome from 'assets/our_home.png'
 
 export default function Home() {
   let recommendedItems = [...menu]
   recommendedItems = recommendedItems
     .sort(() => 0.5 - Math.random())
     .splice(0, 3)
+
+  const navigate = useNavigate()
+
+  function redirectToDetails(product: Product) {
+    navigate(`/produto/${product.id}`, { state: { product }, replace: true })
+  }
 
   return (
     <section>
@@ -20,7 +27,12 @@ export default function Home() {
             <div className={styles.recommended__image}>
               <img src={item.photo} alt={item.title} />
             </div>
-            <button className={styles.recommended__button}>Ver mais</button>
+            <button
+              className={styles.recommended__button}
+              onClick={() => redirectToDetails(item)}
+            >
+              Ver mais
+            </button>
           </div>
         ))}
       </div>
