@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom'
-import stylesTheme from 'styles/Theme.module.scss'
 
 import styles from './DefaultPage.module.scss'
 
@@ -11,7 +10,7 @@ export default function DefaultPage() {
           A sua loja virtual de cervejas artesanais importadas e nacionais
         </div>
       </header>
-      <div className={stylesTheme.container}>
+      <div className={styles.container}>
         <Outlet />
       </div>
     </>

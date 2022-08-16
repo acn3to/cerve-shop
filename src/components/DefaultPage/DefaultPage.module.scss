@@ -1,29 +1,53 @@
 @import 'styles/variables';
-@import "styles/breakpoints";
+@import 'styles/breakpoints';
 
 .header {
+  width: auto;
   align-items: center;
-  background-image: url("/assets/menu/header.png");
+  background-position: center;
+  background-image: url('/assets/menu/header.png');
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  height: 300px;
+  height: 50vh;
   padding: 0px $horizontal-padding;
-  @media (max-width: $desktop_xsm) {
-    padding: 0px $horizontal-padding-mobile;
+
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    padding: 0px;
+    height: 25vh;
   }
+
+  @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+    padding: 20px $horizontal-padding-tablet;
+  }
+
   @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-    padding: 0px $horizontal-padding-sm;
+    padding: 20px $horizontal-padding-xsm;
   }
+
   @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-    padding: 0px $horizontal-padding-md;
+    padding: 20px $horizontal-padding-sm;
   }
-  
+
   &__text {
-    color: black;
+    color: $white;
     font-size: 2.5rem;
     font-weight: bold;
-    min-width: 400px;
-    width: 40%;
+    backdrop-filter: blur(3px) saturate(159%);
+    -webkit-backdrop-filter: blur(3px) saturate(159%);
+    background-color: rgba(245, 166, 35, 0);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+    @media (min-width: $mobile) and (max-width: $tablet) {
+      align-self: center;
+      font-size: 1.5rem;
+      padding: 0px;
+    }
+    @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+      align-self: center;
+      font-size: 2rem;
+      padding: 0px;
+    }
   }
 }
