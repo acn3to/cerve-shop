@@ -1,19 +1,34 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+.container {
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    padding: 20px $horizontal-padding-mobile;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+    padding: 20px $horizontal-padding-tablet;
+  }
+
+  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+    padding: 20px $horizontal-padding-xsm;
+  }
+
+  @media (min-width: $desktop_sm) {
+    padding: 20px $horizontal-padding-sm;
+  }
+}
+
 .about {
   display: flex;
   gap: 20px;
   margin-bottom: 50px;
-
-  &__image {
-    width: 30%;
-    border-radius: 5px;
-  }
 
   &__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 1.2rem;
-    text-align: justify;
 
     p {
       font-family: 'Josefin Sans', serif;
@@ -27,11 +42,52 @@
   gap: 20px;
   justify-content: space-between;
 
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    justify-content: center;
+    padding: 0 0 16px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+    justify-content: center;
+  }
+
   &__image {
-    width: 450px;
+    max-width: 100%;
+
+    @media (min-width: $mobile) and (max-width: $tablet) {
+      padding: 0 0 16px;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+      justify-content: space-around;
+    }
+
+    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+      justify-content: center;
+    }
+
     img {
       border-radius: 5px;
       width: 100%;
+
+      @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+        width: 36vw;
+      }
+
+      @media (min-width: $desktop_sm) {
+        justify-content: center;
+        width: 35vw;
+      }
+
+      @media (min-width: $desktop_sm) {
+        justify-content: center;
+      }
     }
   }
+}
+
+.title {
+  color: $black;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
 }

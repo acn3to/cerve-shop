@@ -1,7 +1,5 @@
 import beer1 from 'assets/about/beer1.png'
 import beer2 from 'assets/about/beer2.png'
-import home from 'assets/about/home.png'
-import stylesTheme from 'styles/Theme.module.scss'
 
 import styles from './About.module.scss'
 
@@ -9,14 +7,9 @@ const images = [beer1, beer2]
 
 export default function About() {
   return (
-    <section>
-      <h3 className={stylesTheme.title}>Sobre</h3>
+    <section className={styles.container}>
+      <h3 className={styles.title}>Sobre</h3>
       <div className={styles.about}>
-        <img
-          src={home}
-          alt="Imagem de um bar"
-          className={styles.about__image}
-        />
         <div className={styles.about__text}>
           <p>
             Prazer, somos a Cerve Shop uma loja especializada no comércio de
