@@ -18,15 +18,22 @@
   }
 
   @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+    height: 25vh;
     padding: 20px $horizontal-padding-tablet;
   }
 
   @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+    height: 30vh;
     padding: 20px $horizontal-padding-xsm;
   }
 
   @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+    height: 35vh;
     padding: 20px $horizontal-padding-sm;
+  }
+
+  @media (min-width: $desktop_md) {
+    height: 40vh;
   }
 
   &__text {
@@ -40,14 +47,21 @@
     border: 1px solid rgba(255, 255, 255, 0.125);
 
     @media (min-width: $mobile) and (max-width: $tablet) {
+      margin: 30px;
       align-self: center;
       font-size: 1.5rem;
       padding: 0px;
     }
+
     @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+      margin: 0px;
       align-self: center;
       font-size: 2rem;
       padding: 0px;
+    }
+
+    @media (min-width: $desktop_xsm) {
+      width: 50vw;
     }
   }
 }
