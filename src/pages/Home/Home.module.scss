@@ -1,17 +1,107 @@
 @import 'styles/variables';
+@import 'styles/breakpoints';
+
+.container {
+  padding: 50px $horizontal-padding;
+
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    padding: 50px $horizontal-padding-mobile;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+    padding: 50px $horizontal-padding-tablet;
+  }
+
+  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+    padding: 50px $horizontal-padding-xsm;
+  }
+
+  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+    padding: 50px $horizontal-padding-sm;
+  }
+}
+
+.title {
+  color: $black;
+  font-size: 2rem;
+  margin-bottom: 30px;
+
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+    font-size: 2rem;
+  }
+}
+
+.ourHome_title {
+  padding: 0px $horizontal-padding;
+  color: $black;
+  font-size: 2rem;
+  margin-bottom: 30px;
+
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    font-size: 1.5rem;
+    padding: 0px $horizontal-padding-mobile;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+    font-size: 2rem;
+    padding: 0px $horizontal-padding-tablet;
+  }
+
+  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+    padding: 0px $horizontal-padding-xsm;
+  }
+
+  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+    padding: 0px $horizontal-padding-sm;
+  }
+}
 
 .recommendeds {
+  align-items: center;
   border-radius: 2px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
+
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .recommended {
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    padding: 20px $horizontal-padding-mobile;
+  }
+
   &__image {
-    width: 300px;
+    width: 19.5vw;
     margin-bottom: 10px;
+
+    @media (min-width: $mobile) and (max-width: $tablet) {
+      width: 50vw;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+      width: 35vw;
+      display: flex;
+    }
+
     img {
       border-radius: 8px;
       width: 100%;
@@ -19,7 +109,7 @@
   }
 
   &__button {
-    background-color: $red-dark;
+    background-color: black;
     border: none;
     border-radius: 5px;
     color: white;
@@ -31,19 +121,33 @@
     width: 100%;
 
     &:hover {
-      background-color: $red-dark;
+      background-color: $golden;
     }
   }
 }
 
 .ourHome {
+  display: flex;
   margin-bottom: 100px;
   position: relative;
   width: 100%;
 
   img {
     border-radius: 5px;
+    height: 100%;
     width: 100%;
+
+    @media (min-width: $tablet) {
+      padding: 0px $horizontal-padding-tablet;
+    }
+
+    @media (min-width: $desktop_xsm) {
+      padding: 0px $horizontal-padding-xsm;
+    }
+
+    @media (min-width: $desktop_sm) {
+      padding: 0px $horizontal-padding-sm;
+    }
   }
 
   &__address {
@@ -51,7 +155,7 @@
     background-color: rgba(17, 25, 40, 0.68);
     border-radius: 5px;
     bottom: -45px;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     font-weight: bold;
@@ -62,9 +166,9 @@
     left: 0;
     right: 0;
     width: 200px;
-    backdrop-filter: blur(5px) saturate(139%);
-    -webkit-backdrop-filter: blur(5px) saturate(139%);
-    border-radius: 5px;
+    backdrop-filter: blur(6px) saturate(159%);
+    -webkit-backdrop-filter: blur(6px) saturate(159%);
+    background-color: rgba(227, 190, 44, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.125);
   }
 }
