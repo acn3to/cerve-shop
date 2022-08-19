@@ -1,36 +1,69 @@
 @import 'styles/variables';
-@import "styles/breakpoints";
+@import 'styles/breakpoints';
 
 .menu {
   display: flex;
   padding: 20px $horizontal-padding;
-  @media (max-width: $desktop_xsm) {
+
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    justify-content: center;
     padding: 20px $horizontal-padding-mobile;
   }
+
+  @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+    padding: 20px $horizontal-padding-mobile;
+  }
+
   @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
     padding: 20px $horizontal-padding-sm;
   }
+
   @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
     padding: 20px $horizontal-padding-md;
   }
 
   &__list {
-    align-items: center;
     display: flex;
   }
+
   &__link {
     list-style-type: none;
     padding: 0 20px;
+
     a {
-      color: $dark;
+      color: black;
       cursor: pointer;
       font-size: 24px;
       font-weight: 600;
       text-decoration: none;
-      transition: .2s ease;
+      transition: 0.2s ease;
+
+      @media (min-width: $mobile) and (max-width: $tablet) {
+        font-size: 18px;
+      }
+
+      @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+        font-size: 24px;
+      }
+
       &:hover {
-        color: $golden
+        color: $golden;
       }
     }
+  }
+}
+
+.logo {
+  font-size: 1rem;
+
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    position: absolute;
+    width: 20vw;
+    left: 0;
+    top: 15px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+    position: inherit;
   }
 }

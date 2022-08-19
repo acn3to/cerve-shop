@@ -20,7 +20,7 @@ export default function Menu() {
   ]
   return (
     <nav className={styles.menu}>
-      <Logo />
+      <Logo className={styles.logo} />
       <ul className={styles.menu__list}>
         {routes.map((route, index) => (
           <li className={styles.menu__link} key={index}>
