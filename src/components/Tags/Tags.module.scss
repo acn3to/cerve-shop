@@ -1,10 +1,10 @@
 @import 'styles/variables';
 @import 'styles/breakpoints';
 
-$nationals: #f7b538;
-$importeds: #780116;
-$combos: #d8572a;
-$cups: #ea3546;
+$nationals: #fe5200;
+$importeds: #ba0101;
+$combos: #540804;
+$cups: #feca54;
 
 .tags {
   display: flex;
@@ -12,11 +12,9 @@ $cups: #ea3546;
   justify-content: space-between;
   margin-bottom: 20px;
   max-width: 700px;
-  @media (max-width: $desktop_xsm) {
-    justify-content: flex-end;
-  }
-  @media (max-width: $mobile) {
-    justify-content: flex-start;
+
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    padding: 50px $horizontal-padding-mobile;
   }
 
   div {
@@ -46,7 +44,7 @@ $cups: #ea3546;
     }
     &__cups {
       background-color: $cups;
-      color: white;
+      color: black;
     }
   }
 

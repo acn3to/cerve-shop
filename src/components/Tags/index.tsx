@@ -1,5 +1,6 @@
 import classNames from 'classnames'
 import { Product } from 'types/Product'
+
 import styles from './Tags.module.scss'
 
 export default function Tags({
