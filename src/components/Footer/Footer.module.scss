@@ -2,10 +2,28 @@
 @import 'styles/breakpoints';
 
 .footer {
+  align-items: center;
   text-align: center;
   background-color: $yellow;
   justify-content: space-between;
   display: flex;
+
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    display: inline-block;
+    padding: 20px $horizontal-padding-mobile;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+    padding: 20px $horizontal-padding-tablet;
+  }
+
+  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+    padding: 20px $horizontal-padding-sm;
+  }
+
+  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+    padding: 20px $horizontal-padding-md;
+  }
 
   padding: 10px $horizontal-padding;
 
@@ -67,7 +85,6 @@
   }
 
   &__text {
-    // text-align: center;
     font-family: 'Josefin Sans', sans-serif;
   }
 
@@ -82,31 +99,9 @@
       color: $white;
     }
   }
-
-  // @media (min-width: $mobile) {
-  //   padding: 20px $horizontal-padding-mobile;
-  // }
-
-  // @media (min-width: $desktop_xsm) {
-  //   padding: 20px $horizontal-padding-mobile;
-  // }
-
-  // @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-  //   padding: 20px $horizontal-padding-sm;
-  // }
-
-  // @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-  //   padding: 20px $horizontal-padding-md;
-  // }
-
-  //   @media (min-width: $mobile) and (max-width: $tablet) {
-  //   }
 }
 
 .icon {
-  vertical-align: -0.125em;
-}
-
-.logo {
-  align-self: center;
+  color: #0e76a8;
+  vertical-align: -0.135em;
 }

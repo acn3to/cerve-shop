@@ -7,6 +7,9 @@ import styles from './Footer.module.scss'
 export default function Footer() {
   return (
     <footer className={styles.footer}>
+      <Logo className={styles.logo} />
+      <br />
+      <br />
       <div>
         <ul className={styles.footer__social_list}>
           <li>
@@ -47,10 +50,10 @@ export default function Footer() {
           </li>
         </ul>
         <p className={styles.footer__text}>
-          Desenvolvido com React <FaReact className={styles.icon} /> por{' '}
+          Desenvolvido com 💙 em React <FaReact className={styles.icon} /> por{' '}
           <a
             className={styles.footer__link}
-            href="https://github.com/acn3to"
+            href="https://acn3to.github.io/acn3to-resume/index_pt.html"
             target="_blank"
             rel="noreferrer"
           >
@@ -58,7 +61,6 @@ export default function Footer() {
           </a>
         </p>
       </div>
-      <Logo className={styles.logo} />
     </footer>
   )
 }
