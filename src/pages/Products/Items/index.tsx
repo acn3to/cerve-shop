@@ -1,9 +1,9 @@
+import menu from 'data/menu.json'
 import { useEffect, useState } from 'react'
+import { Menu } from 'types/Product'
 
 import Item from './Item'
-import menu from 'data/menu.json'
 import styles from './Items.module.scss'
-import { Menu } from 'types/Product'
 
 interface Props {
   search: string
