@@ -7,16 +7,23 @@ $combos: #d8572a;
 $cups: #ea3546;
 
 .item {
-  display: flex;
+  justify-content: center;
   align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
   flex-wrap: wrap;
+  padding: 20px;
+  transition: 0.2s ease-in;
   width: 90%;
+
+  &:hover {
+    background-color: $grey;
+  }
 
   &__image {
     min-width: 240px;
-    @media (max-width: $desktop_xsm) {
-      width: 100%;
-    }
+
     img {
       border-radius: 8px;
       width: 100%;
@@ -29,23 +36,27 @@ $cups: #ea3546;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 20px;
-    @media (max-width: $desktop_xsm) {
-      flex-direction: row;
-      margin-top: 20px;
-      padding: 0;
-    }
+    margin: 0 20px;
   }
 
   &__title {
     h2 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: bold;
       margin-bottom: 20px;
+
+      @media (min-width: $mobile) and (max-width: $tablet) {
+        text-align: center;
+      }
+
+      @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+        text-align: start;
+      }
     }
+
     p {
       color: $dark-grey;
-      font-size: 1rem;
+      font-size: 1.3rem;
       font-weight: 600;
       max-width: 600px;
       margin-bottom: 20px;
