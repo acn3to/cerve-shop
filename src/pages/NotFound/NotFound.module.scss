@@ -1,4 +1,5 @@
 @import 'styles/variables';
+@import 'styles/breakpoints';
 
 .container {
   align-items: center;
@@ -6,6 +7,24 @@
   flex: 1;
   flex-direction: column;
   justify-content: center;
+  height: 50vh;
+  padding: 50px $horizontal-padding;
+
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    padding: 50px $horizontal-padding-mobile;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+    padding: 50px $horizontal-padding-mobile;
+  }
+
+  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+    padding: 50px $horizontal-padding-sm;
+  }
+
+  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+    padding: 50px $horizontal-padding-md;
+  }
 }
 
 .back {
