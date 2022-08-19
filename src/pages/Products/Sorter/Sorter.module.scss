@@ -1,4 +1,4 @@
-@import "styles/variables";
+@import 'styles/variables';
 
 .sorter {
   align-items: center;
@@ -16,7 +16,7 @@
   position: relative;
 
   &--active {
-    background-color: $yellow;
+    background-color: $golden;
     color: white;
   }
 
@@ -27,7 +27,7 @@
     flex-direction: column;
     top: 100%;
     width: 100%;
-    
+
     &--active {
       display: flex;
     }
@@ -43,11 +43,10 @@
     height: 40px;
     justify-content: center;
     width: inherit;
-    
-    &:hover,
 
+    &:hover,
     &--active {
-      background-color: $yellow;
+      background-color: $golden;
       cursor: pointer;
       color: white;
     }
