@@ -12,7 +12,7 @@
   padding: 50px $horizontal-padding;
 
   @media (min-width: $mobile) and (max-width: $tablet) {
-    padding: 50px $horizontal-padding-mobile;
+    padding: 50px 30px;
   }
 
   @media (min-width: $tablet) and (max-width: $desktop_xsm) {
@@ -37,16 +37,39 @@
   @media (min-width: $mobile) and (max-width: $tablet) {
     font-size: 1.5rem;
     text-align: center;
+
+    padding: 50px 30px;
   }
 
   @media (min-width: $tablet) and (max-width: $desktop_xsm) {
     font-size: 2rem;
     text-align: center;
+
+    padding: 0px $horizontal-padding-tablet;
   }
 }
 
 .image {
-  width: 450px;
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    width: 100vw;
+
+    padding: 0px $horizontal-padding-mobile;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop_xsm) {
+    padding: 50px $horizontal-padding-tablet;
+  }
+
+  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+    width: 60vw;
+
+    padding: 50px $horizontal-padding-xsm;
+  }
+
+  @media (min-width: $desktop_sm) {
+    width: 25vw;
+  }
+
   img {
     border-radius: 8px;
     width: 100%;
@@ -63,17 +86,8 @@
     font-size: 1.2rem;
     font-weight: bold;
 
-    @media (min-width: $mobile) and (max-width: $tablet) {
-      padding: 50px $horizontal-padding-mobile;
-    }
-
-    @media (min-width: $tablet) and (max-width: $desktop_xsm) {
-      width: 80vw;
-      padding: 0px;
-    }
-
     @media (min-width: $desktop_xsm) {
-      width: 75vw;
+      width: 50vw;
     }
   }
 
